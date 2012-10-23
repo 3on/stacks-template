@@ -7,7 +7,51 @@
     </style>
 </head>
 <body>
-    <h1></h1>
-    <h3>Push Again</h3>
+    <div id="header"><div><div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="https://dashboard.dotcloud.com"><div class="release"></div></a>
+        </div>
+    </div>
+    </div></div></div>
+
+    <div class="container">
+        <div class="row">
+            <h2 id="before"></h2>
+            <br />
+            <h3>Push Again</h3>
+            <pre>
+dotcloud push
+            </pre>
+            <br />
+            <h3>Documentation</h3>
+            <ul id="links" class="unstyled">
+            </ul>
+            <br />
+            <h3>Cheat sheet</h3>
+            <dl>
+                <dt class="span4"><h4>Application environment</h4></dt>
+                <dd class="offset4"><pre>dotcloud env list</pre></dd>
+
+                <dt class="span4"><h4>Get your app url</h4></dt>
+                <dd class="offset4"><pre>dotcloud url</pre></dd>
+
+                <dt class="span4"><h4>Restart your db</h4></dt>
+                <dd class="offset4"><pre>dotcloud restart <span class="appname">app</span>.db</pre></dd>
+
+                <dt class="span4"><h4>Run commands</h4></dt>
+                <dd class="offset4"><pre>dotcloud run <span class="appname">app</span>.www</pre></dd>
+
+                <dt class="span4"><h4>Real time logs</h4></dt>
+                <dd class="offset4"><pre>dotcloud logs <span class="appname">app</span>.www</pre></dd>
+            </dl>
+            <br />
+            <br />
+            <div class="align-center">
+                <a href="https://dashboard.dotcloud.com/applications/_new" class="btn btn-primary btn-large">Create a new application</a>
+            </div>
+            <br />
+        </div>
+    </div>
 </body>
 </html>
