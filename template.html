@@ -16,8 +16,13 @@
     </div></div></div>
 
     <div class="container">
-        <div class="row">
-            <h2 id="before"></h2>
+        <div class="row-fluid">
+            <div class="">
+                <div class="span9"><h2 id="before"></h2></div>
+                <div class="span3"><a href="" id="github" target="_blank"><i class='icon-github'></i> Github repository</a></div>
+            </div>
+            <br />
+            <br />
             <br />
             <h3>Push Again</h3>
             <pre>
@@ -43,7 +48,10 @@ dotcloud push
                 <dd class="offset4"><pre>dotcloud run <span class="appname">app</span>.www</pre></dd>
 
                 <dt class="span4"><h4>Real time logs</h4></dt>
-                <dd class="offset4"><pre>dotcloud logs <span class="appname">app</span>.www</pre></dd>
+                <dd class="offset4"><pre>dotcloud logs</pre></dd>
+
+                <dt class="span4"><h4>Open in your browser</h4></dt>
+                <dd class="offset4"><pre>dotcloud open <span class="appname">app</span></pre></dd>
             </dl>
             <br />
             <br />

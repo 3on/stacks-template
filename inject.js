@@ -13,7 +13,9 @@ scriptTag.onload = function(){
     $('head').append(tmpl.head);
     $('body').append(tmpl.body);
     
+    $('head title').text('dotCloud ' + stacks[stack].name + ' Hello Worlds stack');
     $('#before').text(old);
+    $('#github').attr('href', stacks[stack].githubUrl);
     $('.appname').text(appname);
 
     $.each(stacks[stack].more, function(i, e){
@@ -33,11 +35,11 @@ var stacks = {
         more: [
             {
                 name: "PHP on dotCloud",
-                url: "http://docs.dotcloud.com/0.4/services/php/"
+                url: "http://docs.dotcloud.com/services/php/"
             },
             {
                 name: "MySQL on dotCloud",
-                url: "http://docs.dotcloud.com/0.4/services/mysql/"
+                url: "http://docs.dotcloud.com/services/mysql/"
             },
             {
                 name: "PHP official documentation",
@@ -54,11 +56,11 @@ var stacks = {
         more: [
             {
                 name: "Node.js on dotCloud",
-                url: "http://docs.dotcloud.com/0.4/services/nodejs/"
+                url: "http://docs.dotcloud.com/services/nodejs/"
             },
             {
                 name: "MongoDB on dotCloud",
-                url: "http://docs.dotcloud.com/0.4/services/mongodb/"
+                url: "http://docs.dotcloud.com/services/mongodb/"
             },
             {
                 name: "Node.js official documentation",
@@ -76,11 +78,11 @@ var stacks = {
         more: [
             {
                 name: "Python on dotCloud",
-                url: "http://docs.dotcloud.com/0.4/services/python/"
+                url: "http://docs.dotcloud.com/services/python/"
             },
             {
                 name: "Django on dotCloud documentation",
-                url: "http://docs.dotcloud.com/0.4/tutorials/python/django/"
+                url: "http://docs.dotcloud.com/tutorials/python/django/"
             },
             {
                 name: "Python official documentation",
@@ -88,7 +90,7 @@ var stacks = {
             },
             {
                 name: "PostgreSQL on dotCloud documentation",
-                url: "http://docs.dotcloud.com/0.4/services/postgresql/"
+                url: "http://docs.dotcloud.com/services/postgresql/"
             }
         ]
         },
@@ -101,11 +103,11 @@ var stacks = {
         more: [
             {
                 name: "Ruby on dotCloud",
-                url: "http://docs.dotcloud.com/0.4/services/ruby/"
+                url: "http://docs.dotcloud.com/services/ruby/"
             },
             {
                 name: "MySQL on dotCloud",
-                url: "http://docs.dotcloud.com/0.4/services/mysql/"
+                url: "http://docs.dotcloud.com/services/mysql/"
             },
             {
                 name: "Sinatra official documentation",
@@ -123,7 +125,7 @@ var stacks = {
         more: [
             {
                 name: "Perl on dotCloud",
-                url: "http://docs.dotcloud.com/0.4/services/perl/"
+                url: "http://docs.dotcloud.com/services/perl/"
             },
             {
                 name: "Mojolicious official documentation",
